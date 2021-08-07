@@ -1,5 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
 .App {
   text-align: center;
+}
+.progressbar-progress{
+  background: rgb(99,102,241) !important;
+/* background: linear-gradient(90deg, rgba(99,102,241,1) 0%, rgba(244,114,182,1) 100%) !important; */
 }
 
 .App-logo {
