@@ -6,13 +6,13 @@ import Contact from '../Components/Contact';
 import Project from '../Components/Project';
 import Testimonials from '../Components/Testimonials';
 
-function Homescreen() {
+function Homescreen({db}) {
     return (
         <div>
             
       <About />
       <AreasOfIntrest />
-      <Project />
+      <Project db={db}  />
       <Testimonials />
       <Contact />
         </div>

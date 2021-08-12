@@ -11,7 +11,8 @@ const navigation = [
   { name: 'Contact', href: '#contact' }
 ]
 
-export default function Hero() {
+export default function Hero({user}) {
+  
   return (
     <div className="relative bg-white border border-t-0 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -40,7 +41,7 @@ export default function Hero() {
                           <span className="sr-only">Workflow</span>
                           <img
                             className="h-8 w-auto sm:h-10"
-                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                            src="https://fontmeme.com/permalink/210812/b63cf92d55280e147cec0a34d928ef3a.png"
                           />
                         </a>
                         <div className="-mr-2 flex items-center md:hidden">
@@ -57,9 +58,7 @@ export default function Hero() {
                           {item.name}
                         </a>
                       ))}
-                      <a href="/login" className="font-medium text-indigo-600 hover:text-indigo-500">
-                        Log in
-                      </a>
+                      
                     </div>
                   </nav>
                 </div>
@@ -84,7 +83,7 @@ export default function Hero() {
                         <div>
                           <img
                             className="h-8 w-auto"
-                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                            src="https://fontmeme.com/permalink/210812/b63cf92d55280e147cec0a34d928ef3a.png"
                             alt=""
                           />
                         </div>
@@ -106,12 +105,6 @@ export default function Hero() {
                           </a>
                         ))}
                       </div>
-                      <a
-                        href="/Login"
-                        className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                      >
-                        Log in
-                      </a>
                     </div>
                   </Popover.Panel>
                 </Transition>
@@ -122,18 +115,18 @@ export default function Hero() {
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight  text-gray-900  sm:text-5xl md:text-6xl">
-              <span className="block font-light xl:inline">Hey I'm</span>{' '}
-                <span className="block text-indigo-600 xl:inline">Anmol Raj</span>
+              <span className="block font-light italic xl:inline">Hey I'm</span>{' '}
+                <span className="block text-indigo-600 font-semibold xl:inline">Anmol Raj</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              I’m a junior from 🇮🇳 I'm an AI enthusiast, a React Developer &amp; a learner .📕I'm deeply passionate about AI , ML &amp; Data Science.
+              I’m a junior from 🇮🇳 I'm an AI enthusiast, a React Developer &amp; a learner .I'm deeply passionate about AI , ML &amp; Data Science.
                             
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href="/portfolio"
-                    className="w-full flex items-center justify-center px-8 py-2  text-base font-medium text-white bg-gradient-to-r to-green-400 via-blue-500 from-indigo-600 hover:bg-indigo-700 md:py-3 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-2  text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 md:py-3 md:text-lg md:px-10"
                   >
                     My Projects
                   </a>

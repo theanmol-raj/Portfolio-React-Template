@@ -24,8 +24,8 @@ function AreasOfIntrest() {
     <div className='grid grid-cols-1 py-16 md:grid-cols-2 mx-8 gap-8 lg:grid-cols-3'>
         {intrest.map(({icon,name,info})=>(
           <div className='p-8 items-center bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 ease-out duration-300 group cursor-pointer'>
-            <h1 className='text-4xl text-gray-700 max-w-max mx-auto group-hover:text-purple-500'>{icon}</h1>
-            <p className='text-xl font-semibold text-gray-700 max-w-max  mx-auto w- group-hover:text-purple-500'>{name}</p>
+            <h1 className='text-4xl text-gray-700 max-w-max mx-auto group-hover:text-indigo-600'>{icon}</h1>
+            <p className='text-xl font-semibold text-gray-700 max-w-max  mx-auto w- group-hover:text-indigo-600'>{name}</p>
             <p className='text-gray-700 text-sm'>{info}</p>
           </div>
         ))}

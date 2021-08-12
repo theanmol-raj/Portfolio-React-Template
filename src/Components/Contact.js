@@ -5,7 +5,13 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
-const socials =[{icon:<LinkedInIcon fontSize='inherit' />,link:''},{icon:<EmailIcon fontSize='inherit'/>,link:''},{icon:<GitHubIcon fontSize='inherit' />,link:''},{icon:<InstagramIcon fontSize='inherit' />,link:''},{icon:<YouTubeIcon fontSize='inherit' />,link:''}]
+const socials =[
+  {icon:<LinkedInIcon fontSize='inherit' />,link:'https://www.linkedin.com/in/anmolraj5/'},
+  {icon:<EmailIcon fontSize='inherit'/>,link:'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=course.anmolraj@gmail.com&su=Subject&body=Body%20Text'},
+  {icon:<GitHubIcon fontSize='inherit' />,link:'https://github.com/theanmol-raj'},
+  {icon:<InstagramIcon fontSize='inherit' />,link:'https://www.instagram.com/anmolraj_/'},
+  {icon:<YouTubeIcon fontSize='inherit' />,link:''}
+]
 function Contact() {
     return (
         <div id='contact' className="relative bg-gray-100 py-12 overflow-hidden">

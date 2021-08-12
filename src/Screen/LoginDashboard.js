@@ -3,14 +3,16 @@ import firebase from 'firebase'
 
 function LoginDashboard({user=null,db=null}) {
 
-    const [newProject,setNewProject] =useState({
-            img :'', 
-            name:'', 
-            desc:'', 
-            linklive:'', 
-            linkcode:'',
-            date:firebase.firestore.FieldValue.serverTimestamp()
-    })
+    let Schema = {
+        img :'', 
+        name:'', 
+        desc:'', 
+        linklive:'', 
+        linkcode:'',
+        date:firebase.firestore.FieldValue.serverTimestamp()
+}
+
+    const [newProject,setNewProject] =useState(Schema)
 
     const handleOnChange = e =>{
         let {name, value} = e.target
@@ -27,6 +29,7 @@ function LoginDashboard({user=null,db=null}) {
         if(db){
             db.collection('Projects').add(newProject)
         }
+        setNewProject(Schema)
         
     }
     return (
@@ -35,7 +38,7 @@ function LoginDashboard({user=null,db=null}) {
       <p className='text-left text-7xl xl:text-9xl font-black opacity-10 mx-auto md:mx-0 text-indigo-600'>Upload</p>
     <p className='text-left text-3xl xl:text-5xl pl-8 -mt-16 xl:-mt-24 pb-4 mx-auto md:mx-0 '>Add a new project </p>
 
-    <form onSubmit={handleOnSubmit}>
+    {user.uid == '9O8yI3nW7YQOBsuyQs90ytlC0583' ? <form onSubmit={handleOnSubmit}>
             <div>
             <div className='w-full flex flex-col pt-8'>
             <input
@@ -82,7 +85,7 @@ function LoginDashboard({user=null,db=null}) {
             </div>
             </div>
 
-            </form>
+            </form>:'Not authorized to access this link'}
       </div>
         </div>
     )
