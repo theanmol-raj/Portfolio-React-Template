@@ -1,6 +1,6 @@
 import firebase from "firebase";
 var firebaseConfig = {
-    apiKey: "AIzaSyAalavYRQGvXbeH--tx_lTjdqZvp_-69EQ",
+    apiKey: "Use config HEre",
     authDomain: "my-portfolio-ceb8e.firebaseapp.com",
     projectId: "my-portfolio-ceb8e",
     storageBucket: "my-portfolio-ceb8e.appspot.com",
